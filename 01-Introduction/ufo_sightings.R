@@ -58,7 +58,7 @@ good.rows <- ifelse(nchar(ufo$DateOccurred) != 8 |
                     nchar(ufo$DateReported) != 8,
                     FALSE,
                     TRUE)
-length(which(!good.rows))      # While 375 rows may seem like a lot, out of over 60K
+length(which(!good.rows))      # While 731 rows may seem like a lot, out of over 60K
 ufo <- ufo[good.rows, ]        # it is only about 0.6% of the total number of records.
 
 # Now we can convert the strings to Date objects and work with them properly
